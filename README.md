@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Laundry App
 
 Flutter client for the single-store laundry application.
@@ -50,3 +51,6 @@ npx supabase db advisors --local --type security
 ```
 
 The production database schema is represented by the baseline migration. Apply later migrations to production only after review and a deployment window; the checked-in RLS migration intentionally restricts the existing broad client grants.
+=======
+# Mobile_QuanLyCuaHangGiatUi_KLCN027
+>>>>>>> ab6eccd21d0d6913df89a1bfcbfe1074eac6bdab
