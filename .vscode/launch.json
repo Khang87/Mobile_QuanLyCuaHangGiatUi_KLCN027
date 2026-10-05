@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flutter Supabase",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--dart-define=SUPABASE_URL=https://osnblefzulmsuthhuswl.supabase.co",
+        "--dart-define=SUPABASE_PUBLISHABLE_KEY=sb_publishable_IZdxqiGHY53pbkCsb9qXPQ_-aqyWsBh"
+      ]
+      
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+﻿
+          ]
+        }
+>       Booking: {
+          Row: {
+            BookingID: number
+            DiaChiNhan: string | null
+            GhiChu: string | null
+            GioHen: string
+            HinhThucNhanDo: string
+            IdempotencyKey: string | null
+            KhachHangID: number
+            MaBooking: string
+            NgayCapNhat: string | null
+            NgayHen: string
+            NgayTao: string
+            NhanVienID: number | null
+            NhanVienXacNhanID: number | null
+            ThoiGianXacNhan: string | null
+            TrangThai: string
+          }
+          Insert: {
+            BookingID?: number
+            DiaChiNhan?: string | null
+            GhiChu?: string | null
+            GioHen: string
+            HinhThucNhanDo: string
+            IdempotencyKey?: string | null
+            KhachHangID: number
+            MaBooking: string
+            NgayCapNhat?: string | null
+            NgayHen: string
+            NgayTao?: string
+            NhanVienID?: number | null
+          ]
+        }
+>       ChiTietBooking: {
+          Row: {
+            BookingID: number
+            ChiTietBookingID: number
+            DichVuID: number
+            DonGia: number
+            DonViTinhID: number
+            GhiChu: string | null
+            KhoiLuong: number | null
+            LoaiDoGiatID: number
+            SoLuong: number | null
+            ThanhTien: number
+          }
+          Insert: {
+            BookingID: number
+            ChiTietBookingID?: number
+            DichVuID: number
+            DonGia?: number
+            DonViTinhID: number
+            GhiChu?: string | null
+            KhoiLuong?: number | null
+            LoaiDoGiatID: number
+            SoLuong?: number | null
+            ThanhTien?: number
+          }
+          Update: {
+            BookingID?: number
+            ChiTietBookingID?: number
+            DichVuID?: number
+            DonGia?: number
+            DonViTinhID?: number
+      }
+      Functions: {
+>       cancel_laundry_booking: {
+          Args: { p_bookingid: number }
+          Returns: undefined
+        }
+        complete_customer_profile: {
+          Args: { p_full_name?: string }
+          Returns: undefined
+        }
+        complete_google_customer_profile: {
+          Args: { p_full_name?: string }
+          Returns: undefined
+        }
+>       confirm_laundry_booking: { Args: { p_bookingid: number }; Returns: 
+Json }
+        confirm_order_payment: {
+          Args: { p_ghichu?: string; p_success: boolean; p_thanhtoanid: number 
+}
+          Returns: undefined
+        }
+        get_current_roles: { Args: never; Returns: string[] }
+        get_customer_loyalty: { Args: never; Returns: Json }
+        request_order_payment: {
+          Args: {
+            p_donhangid: number
+            p_idempotency_key: string
+            p_phuongthuc: string
+          }
+          Returns: Json
+        }
+        save_customer_address: {
+          Args: {
+            p_diachi: string
+            p_diachiid: number
+            p_ghichu: string
+            p_macdinh: boolean
+            p_sodienthoai: string
+            p_tennguoinhan: string
+          }
+          Returns: number
+        }
+        submit_laundry_order: {
+          Args: {
+            p_banggiaid: number
+            p_diachinhan: string
+            p_ghichu: string
+
+
